@@ -1,0 +1,11 @@
+arquivos_numeros/
+vetores_ordenados/
+*.txt
+gera_vetor
+qs_limite100_mediana3
+qs_limite100_pivo_aleatorio
+qs_mediana3
+qs_original
+qs_pivo_aleatorio
+*.o
+*.out
