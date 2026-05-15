@@ -24,7 +24,7 @@ int main() {
     printf("\nEscolha como gerar os %d numeros:\n", N);
     printf("1 - Ordenado Crescente\n");
     printf("2 - Ordenado Decrescente\n");
-    printf("3 - Desordenado (Aleatorio)\n");
+    printf("3 - Desordenado\n");
     printf("Digite a opcao (1, 2 ou 3): ");
     
     if (scanf("%d", &opcao) != 1 || (opcao < 1 || opcao > 3)) {
