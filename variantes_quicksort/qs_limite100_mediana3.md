@@ -1,6 +1,6 @@
 # Quicksort Híbrido com Limite de 100 Extremos + Mediana de 3 (`qs_limite100_mediana3.c`)
 
-Esta variação representa uma técnica aplicada ao Quicksort para evitar a todo custo seu pior caso. O algoritmo combina uma estratégia rigorosa de **isolamento dos valores extremos** com a técnica de **Mediana de 3** para criar uma proteção absoluta contra o pior caso computacional ($O(N^2)$).
+Esta variação representa uma técnica aplicada ao Quicksort para evitar a todo custo seu pior caso. O algoritmo combina uma estratégia rigorosa de **isolamento dos valores extremos** com a técnica de **Mediana de 3** para criar uma proteção absoluta contra o pior caso computacional (O($n^2$)).
 
 Para anular o pior caso de forma definitiva em subvetores massivos, este algoritmo estabelece uma "zona proibida" composta pelos **100 maiores** e pelos **100 menores** elementos do subvetor sob análise. O pivô final é extraído exclusivamente da zona de segurança intermediária restante.
 

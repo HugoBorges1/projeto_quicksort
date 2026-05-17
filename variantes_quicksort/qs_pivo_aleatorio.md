@@ -1,6 +1,6 @@
 # Quicksort com pivô aleatório (`qs_pivo_aleatorio.c`)
 
-Este algoritmo implementa uma abordagem **probabilística** que busca resolver o pior caso ($O(N^2)$) em vetores ordenados. Em vez de depender de posições fixas ou calcular medianas exatas, este algoritmo confia na aleatoriedade matemática para evitar gargalos assintóticos.
+Este algoritmo implementa uma abordagem **probabilística** que busca resolver o pior caso (O($n^2$)) em vetores ordenados. Em vez de depender de posições fixas ou calcular medianas exatas, este algoritmo confia na aleatoriedade matemática para evitar gargalos assintóticos.
 
 O objetivo do Quicksort Randomizado é **quebrar qualquer padrão existente nos dados de entrada**, escolhendo o pivô de forma totalmente imprevisível. Assim, a chance de o algoritmo sortear o pior elemento consecutivamente em milhões de chamadas recursivas torna-se estatisticamente quase nula.
 

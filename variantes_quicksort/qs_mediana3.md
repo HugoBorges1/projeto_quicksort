@@ -1,6 +1,6 @@
 # Quicksort com mediana de 3 (`qs_mediana3.c`)
 
-Este algoritmo implementa a técnica da **Mediana de 3** que busca resolver o caso ($O(N^2)$) em vetores ordenados sem sacrificar a velocidade de execução.
+Este algoritmo implementa a técnica da **Mediana de 3** que busca resolver o caso (O($n^2$)) em vetores ordenados sem sacrificar a velocidade de execução.
 
 A técnica da Mediana de 3 tem como único objetivo **garantir que o pivô nunca seja o maior nem o menor elemento do subvetor**, escolhendo um elemento intermediário com um custo computacional constante.
 
