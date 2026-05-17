@@ -1,6 +1,6 @@
 # Quicksort Híbrido com Limite de 100 Extremos + Pivô Aleatório (`qs_limite100_pivo_aleatorio.c`)
 
-Este algoritmo implementa uma blindagem de segurança agressiva contra o pior caso do Quicksort (complexidade $O(N^2)$). A estratégia consiste em mapear e isolar os maiores e menores elementos de um subvetor, criando uma "zona segura" no meio dos dados. O pivô final é então escolhido através de um **sorteio aleatório** exclusivo dentro dessa zona permitida.
+Este algoritmo implementa uma blindagem de segurança agressiva contra o pior caso do Quicksort (complexidade O($n^2$)). A estratégia consiste em mapear e isolar os maiores e menores elementos de um subvetor, criando uma "zona segura" no meio dos dados. O pivô final é então escolhido através de um **sorteio aleatório** exclusivo dentro dessa zona permitida.
 
 O propósito desta implementação é garantir que o pivô selecionado para o particionamento nunca seja um elemento de extremo valor (os 100 maiores ou os 100 menores). Ao garantir que o pivô seja aleatório, mas obrigatoriamente intermediário, o algoritmo força divisões estruturalmente saudáveis e elimina matematicamente a vulnerabilidade do pior caso, mesmo em vetores inteiramente ordenados.
 
