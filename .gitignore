@@ -9,3 +9,5 @@ qs_original
 qs_pivo_aleatorio
 *.o
 *.out
+.gitignore
+Makefile
