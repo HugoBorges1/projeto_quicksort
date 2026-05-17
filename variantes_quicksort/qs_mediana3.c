@@ -56,7 +56,7 @@ int main(int argc, char *argv[]) {
 
     FILE *f_entrada = fopen(nome_arquivo_entrada, "r");
     if (f_entrada == NULL) {
-        printf("Erro: Nao foi possivel abrir o arquivo de entrada '%s'.\n", nome_arquivo_entrada);
+        printf("Erro: nao foi possivel abrir o arquivo de entrada '%s'.\n", nome_arquivo_entrada);
         return 1;
     }
 
@@ -78,7 +78,7 @@ int main(int argc, char *argv[]) {
             capacidade *= 2;
             int *temp = (int *)realloc(vetor, capacidade * sizeof(int));
             if (temp == NULL) {
-                printf("Erro: Faltou memoria RAM para continuar lendo o arquivo.\n");
+                printf("Erro: faltou memoria RAM para continuar lendo o arquivo.\n");
                 free(vetor);
                 fclose(f_entrada);
                 return 1;
@@ -92,7 +92,7 @@ int main(int argc, char *argv[]) {
 
     fclose(f_entrada);
     
-    printf("Sucesso! Foram encontrados %d numeros no arquivo.\n", n);
+    printf("Foram encontrados %d numeros no arquivo.\n", n);
     
     if (n > 0) {
         printf("Ordenando com Quicksort (Mediana de 3)...\n");
@@ -100,7 +100,7 @@ int main(int argc, char *argv[]) {
 
         FILE *f_saida = fopen(nome_arquivo_saida, "w");
         if (f_saida == NULL) {
-            printf("Erro: Nao foi possivel criar o arquivo de saida '%s'.\n", nome_arquivo_saida);
+            printf("Erro: nao foi possivel criar o arquivo de saida '%s'.\n", nome_arquivo_saida);
             free(vetor);
             return 1;
         }
