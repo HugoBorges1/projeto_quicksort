@@ -12,7 +12,7 @@ A cada chamada recursiva, o algoritmo segue um rigoroso processo de filtragem e 
 Antes de iniciar a busca por extremos, o programa avalia o tamanho do subvetor atual ($n\_elem \le 200$). 
 Se o subvetor possuir 200 elementos ou menos, é impossível isolar os 100 maiores e os 100 menores e ainda ter opções de pivô. Nesses casos, a varredura pesada é desativada e o algoritmo recorre a um **Pivô Aleatório Simples** (`rand() % n_elem`), garantindo velocidade na resolução de pequenos blocos.
 
-### 2. O mapeamento dos 200 extremos ($O(N)$)
+### 2. O mapeamento dos 200 extremos
 Para partições maiores que 200 elementos, o algoritmo realiza uma busca linear completa pelo subvetor. Durante essa varredura, ele atualiza constantemente dois históricos de tamanho fixo na memória:
 * `idx_menores[100]`: Armazena os índices das 100 menores chaves numéricas encontradas até o momento.
 * `idx_maiores[100]`: Armazena os índices das 100 maiores chaves numéricas encontradas até o momento.
