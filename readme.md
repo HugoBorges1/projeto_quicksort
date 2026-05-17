@@ -4,7 +4,7 @@ Este repositório foi desenvolvido com o objetivo de avaliar empiricamente o com
 
 ---
 
-## Arquitetura do Ambiente de Testes
+## Ambiente de Testes
 
 Para garantir a reprodução e a fidelidade dos benchmarks, todos os testes foram submetidos a condições semelhantes de execução:
 
@@ -168,7 +168,7 @@ Abaixo estão dispostas as tabelas de benchmarks de tempo extraídas para cada u
   </tbody>
 </table>
 
-> *Nota: todas as estimativas com "~" e em vermelho foram previsões calculadas, e não, testadas. Testes paralelos mostraram que o algoritmo demora mais de 213 segundos para tentar ordenar um vetor ordenado crescente de apenas 1 milhão de posições, algo que ultrapassa todas as outras métricas com algoritmos ordenando 100 milhões, ou seja, o pior caso do quicksort é extremamente custoso, computacionalmente falando.*
+> *Nota: todas as estimativas com "~" foram previsões calculadas, e não, testadas. Testes paralelos mostraram que o algoritmo demora mais de 213 segundos para tentar ordenar um vetor ordenado crescente de apenas 1 milhão de posições, algo que ultrapassa todas as outras métricas com algoritmos ordenando 100 milhões, ou seja, o pior caso do quicksort é extremamente custoso, computacionalmente falando.*
 
 ## Principais Conclusões do Experimento
 
