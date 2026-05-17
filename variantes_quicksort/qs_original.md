@@ -2,7 +2,7 @@
 
 Esta é a implementação tradicional do algoritmo Quicksort, escrita exatamente como descrita em grande parte da literatura académica clássica (como o famoso livro *Introduction to Algorithms* de Thomas H. Cormen). Ele serve como ponto de partida nesse experimento.
 
-O objetivo deste algoritmo é demonstrar a eficiência brutal do particionamento lógico em cenários comuns, mas também expor, na prática, o grande "problema" do Quicksort, que é sua vulnerabilidade a dados pré-ordenados, que aciona o pior caso de complexidade O($n^2$).
+O objetivo deste algoritmo é demonstrar a eficiência do particionamento lógico em cenários comuns, mas também expor, na prática, o grande "problema" do Quicksort, que é sua vulnerabilidade a dados pré-ordenados, que aciona o pior caso de complexidade O($n^2$).
 
 ## Como o algoritmo funciona
 
@@ -59,4 +59,4 @@ Abaixo estão os tempos de execução (em segundos) extraídos dos testes:
 
 > *Nota: Todas as estimativas com "~" foram previsões calculadas, e não, testadas. Testes paralelos mostraram que o algoritmo demora mais de 213 segundos para tentar ordenar um vetor ordenado crescente de apenas 1 milhão de posições, algo que ultrapassa todas as outras métricas com algoritmos ordenando 100 milhões, ou seja, o pior caso do quicksort é extremamente custoso, computacionalmente falando.*
 
-**Conclusão:** em dados desordenados, o Quicksort Original é uma máquina, processando 1 bilhão de números em cerca de 3 minutos. No entanto, quando testado com vetores Crescentes ou Decrescentes, a falha estrutural se expõe, ao escolher o último elemento de um vetor ordenado, o pivô é sempre o maior (ou menor) de todos. Isso gera uma divisão inútil onde um lado fica vazio e o outro fica gigante, forçando a CPU a executar trilhões de operações redundantes, provando a necessidade de implementar variações que tratam esse pior caso (Mediana de 3, Pivô Aleatório, etc.).
+Em dados desordenados, o Quicksort Original é excelente, processando 1 bilhão de números em cerca de 3 minutos. No entanto, quando testado com vetores Crescentes ou Decrescentes, a falha estrutural se expõe, ao escolher o último elemento de um vetor ordenado, o pivô é sempre o maior (ou menor) de todos. Isso gera uma divisão inútil onde um lado fica vazio e o outro fica gigante, forçando a CPU a executar trilhões de operações redundantes, provando a necessidade de implementar variações que tratam esse pior caso (Mediana de 3, Pivô Aleatório, etc.).
