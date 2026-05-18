@@ -46,7 +46,7 @@ diferente das demais variantes, o **`qs_simplificado`** é uma implementação d
 
 ## Resultados dos benchmarks
 
-Abaixo estão dispostas as tabelas de benchmarks de tempo extraídas para cada um dos cenários.
+Abaixo estão dispostas as tabelas de benchmarks de tempo (em segundos) extraídas para cada um dos cenários.
 
 ### 1. Cenário: Vetores Desordenados (Aleatórios)
 <table border="1" style="border-collapse: collapse; text-align: center; width: 100%;">
@@ -173,5 +173,5 @@ Abaixo estão dispostas as tabelas de benchmarks de tempo extraídas para cada u
 ## Principais Conclusões do Experimento
 
 1. **O Colapso do Quicksort Clássico (`qs_original`):** conforme previsto pela teoria, a escolha do último elemento como pivô gera partições degeneradas em vetores pré-ordenados. Sem qualquer otimização sintética do compilador para mascarar o problema, a profundidade excessiva da pilha recursiva resulta num colapso absoluto.
-2. **O Equilíbrio da Mediana de 3:** revelou-se a estratégia de uso prático mais robusta: ordenou rapidamente o caso médio e blindou satisfatoriamente o vetor já ordenado sem impor perdas de velocidade na CPU.
+2. **O Equilíbrio da Mediana de 3:** revelou-se a melhor estratégia de uso prático, pois ordenou rapidamente o caso médio e lidou bem com cenários de vetores ordenados.
 3. **O Custo Oculto da Blindagem de Limites:** embora as variantes com isolamento de `100 extremos` sejam blindagens matematicamente absolutas e infalíveis contra a complexidade O($n^2$), elas cobram um pedágio computacional (*overhead*) extremamente alto em cenários médios devido às movimentações contínuas de memória para mapear os piores índices.
